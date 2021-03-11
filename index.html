@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="top">
+            <p class="setColor">Lorem ipsum dolor sit amet.</p>
+            <p class="setColor">Lorem ipsum dolor sit amet.</p>
+            <p class="setColor">Lorem ipsum dolor sit amet.</p>
+            <p class="setColor">Lorem ipsum dolor sit amet.</p>
+            <p class="setColor">Lorem ipsum dolor sit amet.</p>
+
+        </div>
+
+        <div class="add_style">
+            <button class="edit">EDIT</button>
+            <button class="style">STYLE</button>
+        </div>
+        <div class="bottom">
+            <div class="block-edit">
+                <textarea class="area" name="">
+
+                </textarea>
+                <button class="add">ADD</button>
+                <button class="save">SAVE</button>
+            </div>
+            <div class="block-style">
+                <form name="custom">
+                    <p>Font Size:</p>
+                    <div class="radio">
+                        <input type="radio" class="rad" name="size" value="12px">12px
+                        <input type="radio" class="rad" name="size" value="14px">14px
+                        <input type="radio" class="rad" name="size" value="16px" checked>16px
+                        <input type="radio" class="rad" name="size" value="18px">18px
+                        <input type="radio" class="rad" name="size" value="20px">20px
+                    </div>
+                    <p>Font Family:</p>
+                    <select name="font">
+                        <option value="">Choose option</option>
+                        <option value="cursive">Cursive</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="sans-serif">Sens-Serif</option>
+                    </select>
+
+                    <p>Colors:</p>
+                    <button class="color_of_text">Color of Text</button>
+                    <button class="background_text">Background color</button>
+                    <div class="choose_color ">
+                        <div class="clr red"></div>
+                        <div class="clr green"></div>
+                        <div class="clr blue"></div>
+                        <div class="clr aqua"></div>
+                        <div class="clr pink"></div>
+                        <div class="clr gold"></div>
+                        <div class="clr purple"></div>
+                        <div class="clr grey"></div>
+                        <div class="clr brown"></div>
+                    </div>
+                    <button class="close_box">
+                        
+                    </button>
+                    <div class="choose_bgc">
+                        <div class="bgc1 red"></div>
+                        <div class="bgc1 green"></div>
+                        <div class="bgc1 blue"></div>
+                        <div class="bgc1 aqua"></div>
+                        <div class="bgc1 pink"></div>
+                        <div class="bgc1 gold"></div>
+                        <div class="bgc1 purple"></div>
+                        <div class="bgc1 grey"></div>
+                        <div class="bgc1 brown"></div>
+                    </div>
+
+                    <p>Style</p>
+                    <div class="type_text">
+                        <input class="type1" type="checkbox" name="bold" value="bold">Bold Text
+                        <input class="type2" type="checkbox" name="italic" value=italic">Cursive Text
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="add-elem">
+        <!-- prev btn -->
+        <button class="prev-btn"></button>
+        <h2>Choose what you want to add</h2>
+        <input class="table" type="radio" name="type">Table
+        <input class="list" type="radio" name="type">List
+
+        <div class="create-table">
+
+            <form name="add_table">
+                <div class="str1">
+                    <span>Count TR:</span>
+                    <input name="count_tr" class="enter_val count_tr" type="text">
+                </div>
+                <div class="str2">
+                    <span>Count TD:</span>
+                    <input name="count_td" class="enter_val count_td" type="text">
+                </div>
+                <h2>Add style to your table:</h2>
+                <div class="str3">
+                    <span>Width of TD:</span>
+                    <input name="width_of_td" class="enter_val width_of_td" type="text">
+                </div>
+                <div class="str4">
+                    <span>Height of TD:</span>
+                    <input name="heigth_of_td" class="enter_val heigth_of_td" type="text">
+                </div>
+                <div class="style-border">
+                    <span>Width of border</span>
+                    <input name="border_width" class="enter_val width_of_border" type="text">
+                    <span>Type of border</span>
+                    <select name="border_type" class="enter_val">
+                        <option selected value="solid">solid</option>
+                        <option value="dotted">dotted</option>
+                    </select>
+                    <span>Color of border</span>
+                    <select name="color_border" class="enter_val">
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                    </select>
+                </div>
+
+                <button name="cr_table" class="btn_create">Create table</button>
+            </form>
+        </div>
+        <form name="add_list">
+            <div class="create-list">
+                <div class="row1">
+                    <span>Count li:</span>
+                    <input class="count_li" name="count_li" type="text">
+                </div>
+
+                <span>Type of marks:</span>
+                <select name="type_marks">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+                <button name="cr-list" class="btn_create_list">Create list</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
